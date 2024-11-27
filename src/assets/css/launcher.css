@@ -28,6 +28,11 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+video {
+    width: 100%;
+    height: 100%
+}
+
 .content-scroll {
     overflow: auto;
 }
@@ -88,8 +93,7 @@ input::-webkit-inner-spin-button {
 }
 
 .icon-minimize:hover,
-.icon-restore-down:hover,
-.icon-maximize:hover {
+.icon-restore-down:hover {
     background-color: #0000009d;
 }
 
