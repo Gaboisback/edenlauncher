@@ -9,7 +9,7 @@
         "email": "reinoedenminecraft@gmail.com",
         "url": "https://discord.gg/wNwVVTBAHq"
     },
-    "url": "http://launcher.luuxis.fr",
+    "url": "http://edensafio/",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",

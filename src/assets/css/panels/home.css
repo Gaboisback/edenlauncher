@@ -5,10 +5,18 @@
     align-items: center;
 }
 
-/*******************************************************************************
+.logo {
+    max-width: 70%;
+    height: 30%;
+    position: fixed;
+    top: 50%;
+    transform: translate(1%, -50%);
+}
+
+/******************************************************************************
  *                                                                             *
  * Status server                                                               *
- *                                                                             *
+ *                      *                                                       *
  ******************************************************************************/
 
 .status-server {
@@ -171,7 +179,7 @@
     bottom: 0;
     right: 0;
     width: 15%;
-    height: calc(80% - 1rem);
+    height: calc(50% - 1rem);
     justify-content: center;
     margin-bottom: 1rem;
 }
@@ -184,8 +192,8 @@
 .social-block {
     display: flex;
     background: var(--background-transparent);
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 1rem;
     border-radius: 10px;
     font-size: 2rem;
@@ -251,14 +259,16 @@
 }
 
 .play-instance {
-    display: flex;
+    display: block;
     justify-content: space-between;
-    align-items: center;
+    align-self: center;
     position: relative;
-    border: solid 3px var(--element-color);
+    border: solid 3px #a5a5a57a;
+    background-color: #a5a5a5b9;
     border-radius: 15px;
     height: 3.2rem;
     padding-right: 1.9rem;
+    cursor: pointer;
 }
 
 .play-btn {
@@ -269,27 +279,31 @@
     font-size: 2rem;
     font-weight: bolder;
     padding: 0 1.5rem;
-    pointer-events: none;
+    cursor: pointer;
+    position: relative;
+    top: -5%;
+    left: 7%;
 }
 
 .instance-select {
     display: flex;
     align-items: center;
     position: absolute;
-    right: -3;
+    right: 110%;
     top: -2;
-    color: var(--element-color);
+    color: #a5a5a57a;
     font-size: 1rem;
     height: calc(100% - 1px);
-    border: solid 3px var(--element-color);
+    width: calc(20% - 1px);
+    border: solid 3px #a5a5a57a;
     text-align: center;
     border-radius: 15px;
     padding: 0 0.5rem;
     cursor: pointer;
+    background-color: #a5a5a5b9;
 }
 
 .instance-select:before {
-    transform: rotate(270deg);
     pointer-events: none;
 }
 
@@ -316,11 +330,17 @@
 }
 
 .settings-btn {
-    width: 3rem;
-    height: 3rem;
-    font-size: 3rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 3.2rem;
+    border: solid 3px #a5a5a57a;
+    border-radius: 15px;
     color: var(--element-color);
     margin: 0 1.5rem;
+    position: relative;
+    right: 32.2%;
+    background-color: #a5a5a5b9;
+    cursor: pointer;
 }
 
 .instance-popup {
