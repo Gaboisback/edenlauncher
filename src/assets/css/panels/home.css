@@ -241,6 +241,7 @@
     background-size: cover;
     image-rendering: pixelated;
     transition: var(--transition);
+    border-radius: 15px;
     height: 3rem;
     width: 3rem;
     pointer-events: none;
