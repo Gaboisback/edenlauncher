@@ -1,7 +1,7 @@
 {
     "name": "Eden-Launcher",
     "preductname": "Eden Launcher",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Launcher oficial para los servidores de Reino Eden",
     "main": "src/app.js",
     "author": {
