@@ -9,7 +9,7 @@
         "email": "reinoedenminecraft@gmail.com",
         "url": "https://discord.gg/wNwVVTBAHq"
     },
-    "url": "https://panda-talented-sheep.ngrok-free.app",
+    "url": "http://reinoeden.click/edensafio/",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
@@ -22,6 +22,7 @@
         "ignore": "**/test"
     },
     "dependencies": {
+        "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
         "minecraft-java-core": "^3.10.4",
         "node-bdd": "^2.0.4",

@@ -130,10 +130,10 @@ class Splash {
     }
 
     shutdown(text) {
-        this.setStatus(`${text}<br>Parada en 5s`);
+        this.setStatus(`${text}<br>Cerrando en 5s`);
         let i = 4;
         setInterval(() => {
-            this.setStatus(`${text}<br>Parada en ${i--}s`);
+            this.setStatus(`${text}<br>Cerrando en ${i--}s`);
             if (i < 0) ipcRenderer.send('update-window-close');
         }, 1000);
     }

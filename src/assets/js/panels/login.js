@@ -70,6 +70,13 @@ class Login {
         loginOffline.style.display = 'block';
 
         connectOffline.addEventListener('click', async () => {
+            if (emailOffline){
+                popupLogin.openPopup({
+                   title: 'Conectando',
+                   content: 'Por favor, sé paciente...',
+                   color: 'var(--color)'
+                })
+            }
             if (emailOffline.value.length < 3) {
                 popupLogin.openPopup({
                     title: 'Error',
@@ -139,7 +146,7 @@ class Login {
 
             if (AZauthConnect.error) {
                 PopupLogin.openPopup({
-                    title: 'Erreur',
+                    title: 'Error',
                     content: AZauthConnect.message,
                     options: true
                 });
@@ -156,7 +163,7 @@ class Login {
 
                 connectAZauthA2F.addEventListener('click', async () => {
                     PopupLogin.openPopup({
-                        title: 'conexión en curso...',
+                        title: 'Conexión en curso...',
                         content: 'Por favor, sé paciente...',
                         color: 'var(--color)'
                     });
@@ -174,7 +181,7 @@ class Login {
 
                     if (AZauthConnect.error) {
                         PopupLogin.openPopup({
-                            title: 'Erreur',
+                            title: 'Error',
                             content: AZauthConnect.message,
                             options: true
                         });

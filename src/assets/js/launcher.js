@@ -1,19 +1,13 @@
-/**
- * @author Luuxis
- * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0
- */
-// import panel
 import Login from './panels/login.js';
 import Home from './panels/home.js';
 import Settings from './panels/settings.js';
 
-// import modules
 import { logger, config, changePanel, database, popup, setBackground, accountSelect, addAccount, pkg } from './utils.js';
 const { AZauth, Microsoft, Mojang } = require('minecraft-java-core');
 
-// libs
 const { ipcRenderer } = require('electron');
 const fs = require('fs');
+const rpc = require("discord-rpc");
 
 class Launcher {
     async init() {
@@ -28,6 +22,31 @@ class Launcher {
         await this.initConfigClient();
         this.createPanels(Login, Home, Settings);
         this.startLauncher();
+        
+        const clientId = '1327502529449431072';
+
+        const client = new rpc.Client({
+            transport: 'ipc'
+        })
+
+        client.on('ready', () => {
+
+            console.log("RPC Funcionando!!");
+            client.request('SET_ACTIVITY', {
+                pid: process.pid,
+                activity: {
+                    details: 'Activo en el launcher',
+                    startTimestamp: new Date(),
+                    largeImageKey: 'nombre_imagen_grande',
+                    largeImageText: 'Texto de la imagen grande',
+                    instance: false
+                }
+            }).then(() => console.log("RPC Actividad colocada exitosamente")).catch(console.error);
+
+        });
+
+
+        client.login({ clientId }).catch(console.error);
     }
 
     initLog() {

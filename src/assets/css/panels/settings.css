@@ -31,6 +31,12 @@
     margin: 3rem;
 }
 
+.nav-box #save:hover {
+    background: var(--element-color);
+    box-shadow: 0 0 10px 5px var(--element-color);
+    border: solid 4px var(--element-color);
+}
+
 .nav-settings-btn {
     font-size: 50%;
     border: solid 4px var(--element-color);
@@ -40,10 +46,17 @@
     text-align: center;
     margin: 0.5rem 0;
     cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.nav-settings-btn:hover{
+    background: var(--element-color);
+    box-shadow: 0 0 10px 5px var(--element-color);
 }
 
 .active-settings-BTN {
     background: var(--element-color);
+    box-shadow: 0 0 10px 5px var(--element-color);
 }
 
 .container-settings {
@@ -137,21 +150,6 @@
 .accounts-list #add {
     justify-content: center;
     cursor: pointer;
-}
-
-.add-profile {
-    width: 70px;
-    height: 70px;
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
-}
-
-.add-text-profile {
-    font-size: 1.5rem;
-    pointer-events: none;
 }
 
 .profile-image {

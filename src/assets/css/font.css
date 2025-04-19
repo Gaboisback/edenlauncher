@@ -62,6 +62,10 @@
 .icon-github { background-image: url('../images/svgs/github.svg'); background-size: contain; }
 .icon-instagram { background-image: url('../images/svgs/instagram.svg'); background-size: contain; }
 .icon-instances { background-image: url('../images/svgs/instances.svg'); background-size: contain; }
+.icon-home { background-image: url('../images/svgs/home.svg'); background-size: contain; }
+.icon-shop { background-image: url('../images/svgs/shop.svg'); background-size: contain; }
+.icon-gift { background-image: url('../images/svgs/gift.svg'); background-size: contain; }
+.icon-arrow { background-image: url('../images/svgs/arrow.svg'); background-size: contain; background-repeat: no-repeat;}
 .icon-settings { background-image: url('../images/svgs/settings.svg'); background-size: contain; background-repeat: no-repeat; }
 .icon-reddit { background-image: url('../images/svgs/reddit.svg'); background-size: contain; }
 .icon-telegram { background-image: url('../images/svgs/telegram.svg'); background-size: contain; }

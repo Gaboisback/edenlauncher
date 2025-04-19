@@ -54,7 +54,8 @@ class Config {
                                 title: item.title._text,
                                 content: item['content:encoded']._text,
                                 author: item['dc:creator']._text,
-                                publish_date: item.pubDate._text
+                                publish_date: item.pubDate._text,
+                                reward: item.reward._text
                             })
                         }
                         return resolve(news);

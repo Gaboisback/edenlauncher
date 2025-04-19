@@ -1,41 +1,66 @@
 <div class="container">
     <img src="assets/images/logo.png" alt="Carga fallida" class="logo">
+    <div id="tooltip" class="tooltip">
+        <div class="tooltip-text" id="tooltip-text"></div>
+        <div class="tooltip-footer" id="tooltip-footer"></div>
+    </div>
+    
     <div class="home-bottom">
+        <div class="bottom-page">
+            <div class="titre-tab-new">Noticias</div>
+            <div class="news-page-redirect" data-url="http://localhost/news/noticias">Ver todas</div>
+            <div class="btm-pg-news"></div>
+        </div>
         <div class="social-tab">
             <div class="social-list content-scroll">
-                <div data-url="https://discord.gg/wNwVVTBAHq" class="social-block">
-                    <div class="icon-discord icon-social"></div>
+                <div data-url="https://discord.gg/wNwVVTBAHq" class="social-block" id="icon-discord">
+                    <div data-url="https://discord.gg/wNwVVTBAHq" class="icon-discord icon-social"></div>
                 </div>
 
-                <div data-url="https://www.tiktok.com/@reino_eden" class="social-block">
-                    <div class="icon-tiktok icon-social"></div>
+                <div data-url="https://www.tiktok.com/@reino_eden" class="social-block" id="icon-tiktok">
+                    <div data-url="https://www.tiktok.com/@reino_eden" class="icon-tiktok icon-social"></div>
                 </div>
 
-                <div data-url="https://www.youtube.com/LuuxisHD" class="social-block">
-                    <div class="icon-youtube icon-social"></div>
+                <div data-url="https://www.youtube.com/LuuxisHD" class="social-block" id="icon-youtube">
+                    <div data-url="https://www.youtube.com/LuuxisHD" class="icon-youtube icon-social"></div>
                 </div>
                 
-                <div data-url="https://www.instagram.com/reinoeden/" class="social-block">
-                    <div class="icon-instagram icon-social"></div>
+                <div data-url="https://www.instagram.com/reinoeden/" class="social-block" id="icon-instagram">
+                    <div data-url="https://www.instagram.com/reinoeden/" class="icon-instagram icon-social"></div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="fondo" class="fondo"></div>
 
-    <div class="sidebar"></div>
-    <div class="player-options">
-        <div class="player-head"></div>
+    <div class="sidebar">
+        <div class="play-elements">
+            <div class="play-instance">
+                <button class="play-btn">Jugar</button>
+                <div class="instance-select icon-instances"></div>
+            </div>
+            <div class="info-starting-game">
+                <div class="info-starting-game-text">Conectando...</div>
+                <div class="progress-bar"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+        <div class="select-bar"></div>
+        <div id="home-buttom" class="home-buttom icon-home" data-tooltip="Inicio" data-position="right"></div>
+        <div id="settings-btn" class="settings-btn icon-settings" data-tooltip="Configuración" data-position="right"></div>
+        <div id="shop-buttom" class="shop-buttom icon-shop" data-tooltip="Tienda" data-position="right" data-footer="(Abrir explorador)" data-url="http://localhost:80"></div>
+        <div id="web-button" class="web-button icon-web" data-tooltip="Pagina" data-position="right" data-footer="(Abrir explorador)" data-url="http://localhost:80"></div>
+
     </div>
 
-    <div class="play-elements">
-        <div class="play-instance">
-            <button class="play-btn">Jugar</button>
-        </div>
-        <div class="instance-select icon-instances"></div>
-        <div class="info-starting-game">
-            <div class="info-starting-game-text">Conectando...</div>
-            <progress value="0" max="0" class="progress-bar"></progress>
+    <div class="instance-popup">
+        <div class="instances-tab">
+            <div class="close-popup icon-close"></div>
+            <p class="titulo-popup">Selección de versiones...</p>
+            <div class="instances-List"></div>
         </div>
     </div>
-    <div class="settings-btn icon-settings"></div>
 </div>
